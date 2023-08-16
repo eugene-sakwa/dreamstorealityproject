@@ -2,10 +2,10 @@ import { RequestHandler } from 'express'
 import { mentorModel } from '../models/mentorModel'
 
 const registerNewMentor: RequestHandler = async (req, res) => {
-  console.log('I am here')
   try {
-    const id = req.params.userId
+ 
     const {
+      id,
       firstName,
       lastName,
       title,
@@ -29,8 +29,9 @@ const registerNewMentor: RequestHandler = async (req, res) => {
     // } else if (!email.includes('@')) {
     //   return res.status(400).json({ error: 'Invalid email format' })
     // }
+
     const user = await mentorModel.createOne(
-      parseInt(id),
+     id,
       firstName,
       lastName,
       title,

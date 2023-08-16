@@ -32,7 +32,7 @@ app.post('/register', usersController.registerNewUser)
 app.get('/mentors', mentorsController.getAllMentors)
 
 //Register a mentor
-app.post('/users/:userId', mentorsController.registerNewMentor)
+app.post('/registermentor', mentorsController.registerNewMentor)
 
 app.post('/user', usersController.getUser)
 

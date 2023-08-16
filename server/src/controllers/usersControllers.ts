@@ -34,7 +34,7 @@ const getUser: RequestHandler = async (req, res) => {
     res.status(400)
   }
 
-  const response = { username: user?.userName, password: user?.password }
+  const response = { username: user?.userName, password: user?.password, id: user?.id }
   res.status(200).json(response)
 }
 

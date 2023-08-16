@@ -29,7 +29,7 @@ model Mentor {
   primaryContact String
   location      String
   availability  String
-  skillsTags    String[]
+  skillsTags    String
   roleDescription String
   user          User    @relation(fields: [userId], references: [id])
   userId        Int @unique

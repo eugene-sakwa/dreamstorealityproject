@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Mentor" ALTER COLUMN "skillsTags" SET NOT NULL,
+ALTER COLUMN "skillsTags" SET DATA TYPE TEXT;

@@ -12,7 +12,7 @@ const createOne = async (
   primaryContact: string,
   location: string,
   availability: string,
-  skillsTags: string[],
+  skillsTags: string,
   roleDescription: string
 ) => {
   const newMentor = await prisma.user.update({
