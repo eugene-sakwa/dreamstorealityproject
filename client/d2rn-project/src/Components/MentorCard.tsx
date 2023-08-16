@@ -28,12 +28,12 @@ function MentorCard({ element }: MentorCardProps) {
             alt="profilepic"
           />
         </div>
-        <div className="flex flex-col justify-around p-3 gap-1">
-          <h2 className="card-title">
-            {" "}
+        <div className="flex flex-col text-primary justify-around p-3 gap-1">
+          <h2 className="card-title text-2xl font-bold">
+
             {element.firstName} {element.lastName}
           </h2>
-          <p className="font-semibold">Title: {element.title}</p>
+          <p className="font-semibold ">Title: {element.title}</p>
           <p>Industry: {element.industry}</p>
           <div>
             <p>Bio: {element.bio}</p>
