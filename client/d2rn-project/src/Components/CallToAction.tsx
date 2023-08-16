@@ -1,4 +1,4 @@
-import calltoaction from "../images/logo.png";
+import calltoaction from "../images/calltoaction.png";
 
 function CallToAction() {
   return (
