@@ -10,7 +10,7 @@ function Footer() {
           alt="Home"
         />
       </a>
-      <ul className="flex space-x-8 justify-center">
+      <ul className="flex space-x-8 justify-center text-primary">
         <li>
           <a href="#">Facebook</a>
         </li>
@@ -30,7 +30,7 @@ function Footer() {
           <a href="#">TikTok</a>
         </li>
       </ul>
-      <div className="flex justify-center items-center pt-1">
+      <div className="flex justify-center items-center pt-1 text-primary">
         <span>©2023. DreamsToRealityNetwork. All Rights Reseved</span>
       </div>
     </div>

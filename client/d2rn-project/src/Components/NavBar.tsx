@@ -11,7 +11,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="border-2 border-slate-200 flex justify-between items-center">
+      <nav className="border-2 p-2 border-slate-200 flex justify-between items-center">
         <div className="flex justify-end">
           <a href="/">
             <img
@@ -63,7 +63,7 @@ function NavBar() {
             <a
               onClick={handleLogOut}
               className="rounded border border-primary py-1 px-4 bg-secondary font-semibold hover:scale-105"
-              // href="/login"
+            // href="/login"
             >
               LogOut
             </a>
