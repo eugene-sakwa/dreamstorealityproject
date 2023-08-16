@@ -19,7 +19,7 @@ function Mentors() {
   console.log(mentors);
   return (
     <div>
-      <h2>Mentors</h2>
+      <h2 className="text-center text-6xl pt-12 text-primary font-bold">Mentors</h2>
       <div className="grid grid-cols-2 gap-2">
         {mentors.map((element) => (
           <MentorCard key={element.id} element={element} />

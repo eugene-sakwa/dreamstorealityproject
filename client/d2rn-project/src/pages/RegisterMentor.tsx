@@ -20,7 +20,25 @@ function RegisterMentor() {
   ) => {
     event.preventDefault();
 
+    const userName = localStorage.getItem('isLoggedIn');
+    const currentUser = { userName };
+
+
+    const user = await fetch("http://localhost:8080/user", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(currentUser),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        return data;
+      });
+
+
     const newMentor = {
+      id: user.id,
       firstName,
       lastName,
       title,
